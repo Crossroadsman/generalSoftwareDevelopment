@@ -25,3 +25,5 @@ shortdata <- alldata[1:5,]
 # Here is a way to select based on variable values:
 portiondata <- alldata[ which(alldata$Species == "virginica" & alldata$Sepal.Length < 7.0), ]
 
+
+
