@@ -20,8 +20,10 @@
 # tapply    Apply a function over a ragged array
 
 # Note: "margin" is just fancy speak for rows or columns or rows and columns
+# Note: "list" is a generic vector containing other objects. Think of it as an array that can have any object (number, string, arrays, data.frames, etc) as its elements.
 
-
+## lapply
+# lapply takes three arguments (1) a list "x", (2) a function (or the name of a function) "fun", (3) other arguments
 
 
 
