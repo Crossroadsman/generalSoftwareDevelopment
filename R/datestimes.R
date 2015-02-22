@@ -51,3 +51,28 @@ datestring <- c("January 10, 2012 10:40", "December 9, 2011 9:10")
 x <- strptime(datestring, "%B %d, %Y %H:%M")
 x
 
+
+# Operations on dates and times
+x <- as.Date("2012-01-01")
+y <- strptime("9 Jan 2011 11:34:21", "%d %b %Y %H:%M:%S")
+x - y # gives an error because x and y are different classes:
+class(x) # "Date"
+class(y) # "POSIXlt" "POSIXt"
+# but we can coerce x into a compatible format:
+x <- as.POSIXlt(x)
+x-y # Time difference of 356.2261 days
+
+
+#even keeps track of leap years, leap seconds, daylight savings, and time zones.
+# example:
+x <- as.Date("2012-03-01")
+y <- as.Date("2012-02-28")
+x - y # Time difference of 2 days
+
+xc <- as.POSIXct("2012-10-25 01:00:00")
+yc <- as.POSIXct("2012-10-25 06:00:00", tz = "GMT")
+yc - xc # Time difference of -1 hours
+
+xl <- as.POSIXlt("2012-10-25 01:00:00")
+yl <- as.POSIXlt("2012-10-25 06:00:00", tz = "GMT")
+yl - xl
