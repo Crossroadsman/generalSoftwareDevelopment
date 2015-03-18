@@ -3,6 +3,8 @@
 #The following snippet is from
 #http://rubymonk.com/learning/books/4-ruby-primer-ascent/chapters/45-more-classes/lessons/113-class-variables
 
+# This simple class shows how we can reference the object name in the class definition.
+
 class Item
  def initialize(item_name)
   @item_name = item_name
