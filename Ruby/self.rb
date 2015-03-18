@@ -13,6 +13,8 @@ class Item
  end
 
  def to_s
+  # This method appears to redefine the built-in Ruby method of to_s, so that instead of creating a string that is simply the string version of the input, it is now a particular string with some extra text.
+  # Note that we don't see an explicit call to to_s anywhere in the class. It appears that string interpolation (#{string}) implicitly calls to_s on string.
   "Item: #{@item_name}" 
  end
 
