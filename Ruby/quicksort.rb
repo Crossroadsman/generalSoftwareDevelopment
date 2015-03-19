@@ -25,8 +25,12 @@ bigger = []
     fullArray.each do |val|
         puts "comparing val to pivotValue"
         if val < pivotValue
+            #puts "val is < pivotValue so inserting at beginning of smaller"
+            #smaller.insert(0, val)
+            # In retrospect, placing each successive insert at the beginning of smaller doesn't make sense.
+            
             puts "val is < pivotValue so inserting at beginning of smaller"
-            smaller.insert(0, val)
+            smaller << val
             puts smaller
         end
         if val > pivotValue
