@@ -26,3 +26,26 @@ for language in languages
     end
 end
 
+# list of special characters (that need escaping)
+
+# ^     Negation /^A/ will match any character that is not A
+# $
+# ?
+# .     Matches any character except a newline (some regex systems will really match anything, others, such as Python are more restrictive)
+# /     Start and finish of regex string
+# \     Escape character
+# [     Start character class. /[dr]ejected/ matches dejected, rejected but not ejected
+# ]     End character class. Note that in character class you can use - to specify a range
+# {
+# }
+# (
+# )
+# +
+# *
+
+# list of special escape sequences
+
+# \d
+# \D
+
+
