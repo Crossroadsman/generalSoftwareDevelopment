@@ -1,4 +1,5 @@
 #split
+#More on the split method: http://ruby.about.com/od/advancedruby/a/split.htm
 
 myString = "this and that                     and then some space."
 
