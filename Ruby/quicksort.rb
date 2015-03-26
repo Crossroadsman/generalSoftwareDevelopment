@@ -2,6 +2,8 @@
 # Note: has tons of surplus puts commands from debugging.
 # Left in to show process as it executes.
 
+# BUG: EATS DUPLICATE VALUES where the duplicate is the pivot
+
 def sorter(fullArray) # takes an array
 puts "start of sorter function"
 
