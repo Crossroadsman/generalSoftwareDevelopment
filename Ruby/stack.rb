@@ -42,8 +42,8 @@ class Stack
     def methods
     
       @methods = {"initialize" => "create new stack", "pop" => "remove and return the top item from the stack", "push(element)" => "add the specified element to the stack", "topRead" => "return the top item from the stack" , "methods" => "print methods"}
-      @methods.each do |value, key|
-      puts "#{key}: #{value}"
+      @methods.each do |key, value|
+      puts "#{key} :\t #{value}"
       end
     
     end
