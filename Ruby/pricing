@@ -386,4 +386,7 @@ File.foreach(fname) do |line|
 
 end
 
-File.write('output.csv',outputString)
+puts ("Enter file name to save:")
+oname = gets.chomp()
+
+File.write(oname,outputString)
