@@ -45,8 +45,7 @@ class Package
     methods = {"initialize" => "", "methods" => "this list", "isDraft" => "returns true if draft, false if packaged", "isPackaged" => "returns true if packaged, false if draft", "size" => "total size of unit (in litres)", "itemSize" => "size of an individual item (in litres)", "items" => "number of items in unit"}
     
   end
-  
-  
-  
+    
   
 end
+
