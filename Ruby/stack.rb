@@ -1,3 +1,5 @@
+# To load this class add the following code (ignore the comment)
+# require './stack.rb'
 
 # You can ONLY access the method through the interface
 
@@ -41,7 +43,7 @@ class Stack
     
     def methods
     
-      @methods = {"initialize" => "create new stack", "pop" => "remove and return the top item from the stack", "push(element)" => "add the specified element to the stack", "topRead" => "return the top item from the stack" , "methods" => "print methods"}
+      @methods = {"initialize" => "create new stack", "pop" => "remove and return the top item from the stack", "push(element)" => "add the specified element to the stack", "readTop" => "return the top item from the stack" , "methods" => "print methods"}
       @methods.each do |key, value|
       puts "#{key} :\t #{value}"
       end
@@ -50,9 +52,3 @@ class Stack
     
 end
 
-myStack = Stack.new
-myStack.push("hello")
-myStack.push("world")
-#puts myStack.@store 
-# note this is not valid
-puts myStack.readTop
