@@ -25,6 +25,23 @@ class Sku
     return @liquid.isHighAlcohol == true ? true : false
   end
   
+  def setPriceWithWholesale(wsPrice)
+  end
+  
+  def setPiceWithSellsheet(ssPrice)
+  end
+  
+  def setPriceWithNtb(ntb)
+  end
+  
+  def getNtb
+  end
+  
+  def getWholesale
+  end
+  
+  def getSellsheet
+  end
 
 
 
