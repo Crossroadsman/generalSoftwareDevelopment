@@ -64,6 +64,18 @@ class Sku
     return @ss
   end
 
+  def priceSummary
+    puts "ntb: #{@ntb}"
+    puts "recycling: #{@recycling}"
+    puts "aglc: #{@aglc}"
+    puts "gst'ble: #{@gstble}"
+    puts "gst: #{@gst}"
+    puts "packageDeposit: #{@packageDeposit}"
+    puts "sellSheet: #{@ss}"
+    puts "kegDeposit: #{@kegDeposit}"
+    puts "wholesale: #{@ws}"
+    
+  end
 
 
   
@@ -132,18 +144,18 @@ class Sku
     #bottle desposit
     if @package.isCan
     
-        @depositRate = @@depositRateCan
+        @packageDepositRate = @@depositRateCan
     
     elsif @package.isBottle
     
-        @depositRate = @@depositRateBottle
+        @packageDepositRate = @@depositRateBottle
     
     else
     
-        @depositRate = 0
+        @packageDepositRate = 0
     
     end
-    @packageDeposit = @depositRate * @package.items
+    @packageDeposit = @packageDepositRate * @package.items
     
     
     #sell sheet
@@ -153,13 +165,13 @@ class Sku
     
     if @package.isDraft
     
-        @depositRate = 30
+        @kegDepositRate = 30
     
     else
     
-        @depositRate = 00
+        @kegDepositRate = 00
     end
-    @kegDeposit = @depositRate * @@depositRateKeg
+    @kegDeposit = @kegDepositRate * @package.items
     
     #wholesale
     @ws = @ss + @kegDeposit
