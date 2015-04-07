@@ -32,7 +32,7 @@ class Sku
   #     Support (e.g., method list)
   def methods
   
-    methods = {"initialize" => "", "methods" => "", "isBeer" => "", "isCider" => "", "isHighAlcohol" => "" "setPriceWithNtb" => "", "setPiceWithSellsheet" => "", "setPriceWithWholesale" => "", "getNtb" => "", "getSellsheet", "getWholesale"}
+    methods = {"initialize" => "", "methods" => "", "isBeer" => "", "isCider" => "", "isHighAlcohol" => "", "setPriceWithNtb" => "", "setPiceWithSellsheet" => "", "setPriceWithWholesale" => "", "getNtb" => "", "getSellsheet" => "", "getWholesale" => ""}
   
   end
   
