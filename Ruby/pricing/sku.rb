@@ -1,3 +1,5 @@
+require 'liquid.rb'
+require 'package.rb'
 class Sku
 
   @liquid
