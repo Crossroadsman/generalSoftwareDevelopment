@@ -2,25 +2,45 @@ class Package
 
   @itemSize = 0.00 # litre
   @itemsPerContainer = 0 # number
-  @packageClass = "" # draft or packaged
+  @packageClass = "" # draft or bottle or can
+  @packaged = "" #draft or packaged
 
   def initialize(itemSize, items, pkgClass)
     
     @itemSize = itemSize
     @itemsPerContainer = items
     @packageClass = pkgClass
+    case @packageClass
+    when "bottle"
+      @packaged = "packaged"
+    when "can"
+      @packaged = "packaged"
+    when "draft"
+      @packaged = "draft"
+    else
+      puts "ERROR: unknown packageClass"
+    end
+    
   
+  end
+  
+  def isBottle
+    return @packageClass == "bottle" ? true : false
+  end
+  
+  def isCan
+    return @packageClass == "can" ? true : false
   end
   
   def isDraft
   
-    return @packageClass == "draft" ? true : false
+    return @packaged == "draft" ? true : false
   
   end
   
   def isPackaged
     
-    return @packageClass == "packaged" ? true : false
+    return @packaged == "packaged" ? true : false
   
   end
   
